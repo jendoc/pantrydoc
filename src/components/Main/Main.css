@@ -1,0 +1,26 @@
+.main__header {
+  padding: 46px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.main__header_title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.main__header_icon {
+  height: 80px;
+}
+
+.main__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  overflow: hidden;
+  flex: 1 0 auto;
+}
