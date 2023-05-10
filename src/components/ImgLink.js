@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const ImgLinkEl = styled.div`
+const ImgLinkEl = styled.a`
   display: flex;
-  column-gap: 10px;
+  column-gap: 15px;
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   margin-${(props) => (props.reverse ? "right" : "left")}: -80px;
 `;
@@ -32,7 +32,7 @@ const ImgLinkTitle = styled.h2`
   text-transform: uppercase;
   color: rgba(142, 202, 230, 0.95);
   writing-mode: vertical-rl;
-  ${(props) => (props.reverse ? "transform: rotate(180deg);" : "")};
+  ${(props) => (props.reverse ? "" : "transform: rotate(180deg);")};
   font-size: 32px;
   margin: 0;
 `;

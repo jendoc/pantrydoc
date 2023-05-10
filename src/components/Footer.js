@@ -31,7 +31,7 @@ export default function Footer() {
   return (
     <FooterWrapper>
       <FooterLinks>
-        <FooterLink href="/">
+        <FooterLink href="/calendar">
           <CalIcon color="#023047" />
         </FooterLink>
         <FooterLink href="/recipes">
@@ -43,7 +43,7 @@ export default function Footer() {
         <FooterLink href="/shopping">
           <ShopIcon color="#023047" />
         </FooterLink>
-        <FooterLink href="/settings">
+        <FooterLink href="/pantry">
           <SettingsIcon color="#023047" />
         </FooterLink>
       </FooterLinks>

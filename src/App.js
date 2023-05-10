@@ -1,7 +1,9 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer";
+import Pantry from "./components/Pantry";
+import Recipes from "./components/Recipes";
 
 const handleRouteClick = (evt) => {
   evt.preventDefault();
@@ -11,10 +13,18 @@ const handleRouteClick = (evt) => {
 function App() {
   return (
     <div className="App">
-      <>
-        <Main handleRouteClick={handleRouteClick} />
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={<Main handleRouteClick={handleRouteClick} />}
+          />
+          <Route path="/pantry" element={<Pantry />} />
+          <Route path="/recipes" element={<Recipes />} />
+        </Routes>
+
         <Footer />
-      </>
+      </Router>
     </div>
   );
 }
